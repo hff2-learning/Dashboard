@@ -1,10 +1,99 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<main>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav nav-side flex-column justify-content-between bg-light ps-4 pe-4">
+        <!-- 上半部 -->
+        <div>
+          <h1 class="logo ms-3 mt-4 mb-4">
+            <a href="#">
+              ANSWER
+            </a>
+          </h1>
+          <a class="nav-link link-dark active" aria-current="page" href="#"> 
+            <div class="icon-box">
+              <div class="icon-box-item d-flex">
+                <span class="material-icons pe-4">
+                  assessment
+                </span>
+                <p>Dashboard</p>
+              </div>
+            </div>
+          </a>
+          <a class="nav-link link-dark active" aria-current="page" href="#">
+            <div class="icon-box-item d-flex">
+              <span class="material-icons pe-4">
+                question_answer
+              </span>
+                <p>Question</p>
+            </div>
+          </a>
+          <a class="nav-link link-dark active" aria-current="page" href="#"> 
+            <div class="icon-box-item d-flex">
+              <span class="material-icons pe-4">
+                video_library
+              </span>
+              <p>Assignment</p>
+            </div>
+          </a>
+          <a class="nav-link link-dark active" aria-current="page" href="#">
+            <div class="icon-box-item d-flex">
+              <span class="material-icons pe-4">
+                assignment
+              </span>
+              <p>Course</p>
+            </div>
+          </a>
+          <a class="nav-link link-dark active" aria-current="page" href="#">
+            <div class="icon-box-item d-flex">
+              <span class="material-icons pe-4">
+                supervisor_account
+              </span>
+              <p>Admin</p>
+            </div>
+          </a>
+          <a class="nav-link link-dark active" aria-current="page" href="#">
+            <div class="icon-box-item d-flex">
+              <span class="material-icons pe-4">
+                settings
+              </span>
+              <p>Settings</p>
+            </div>
+          </a>
+        </div>
+        <!-- 下半部 -->
+        <div class="d-flex align-items-center">
+          <div>
+            <img
+              src="./assets/images/andychen.jpeg"
+              alt="登入者頭像"
+              class="user-img me-4"
+            >
+          </div>
+          <div>
+            <p class="user-title">
+              Andy Chen
+            </p>
+            <span class="user-text">
+              andy0401@mail.com
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <main>
   <section class="assignment">
     <nav class="nav justify-content-between">
       <div class="nav-header">
@@ -157,3 +246,12 @@ current: index
 </div>
 </section>
 </main>
+    <footer class="footer">
+      <!-- footer -->
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
