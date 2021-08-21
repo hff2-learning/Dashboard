@@ -1,0 +1,159 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main>
+  <section class="assignment">
+    <nav class="nav justify-content-between">
+      <div class="nav-header">
+        <h2 class="d-inline fs-3 lh-sm fw-3 pe-5">Assignment</h2>
+        <h3 class="d-inline ps-5">All Courses
+          <img src="./assets/images/arrow_bottom.svg" alt="arrow">
+        </h3>
+      </div>
+      <div class="nav-icon">
+        <span class="material-icons pe-5">
+          search
+        </span>
+        <span class="material-icons">
+          notifications_active
+        </span>
+      </div>
+    </nav>
+    <div class="d-flex align-items-start">
+    <!-- Left -->
+    <div class="row">
+      <h4>All (4)<img src="./assets/images/arrow_bottom.svg" alt="arrow"></h4>
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+            <div class="list-header d-flex justify-content-between">
+              <p class="gray-900">Chapter Assignment 2</p>
+              <p>4 hrs ago</p>
+            </div>
+            <div class="list-content d-flex justify-content-between">
+              <h4>Please check this file…</h4>
+              <p>Emily Wang</p>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+            <div class="list-header d-flex justify-content-between">
+              <p>Chapter Assignment 1</p>
+              <p>12 hrs ago</p>
+            </div>
+            <div class="list-content d-flex justify-content-between">
+              <h4>My Homework</h4>
+              <p>David Xu</p>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+            <div class="list-header d-flex justify-content-between">
+              <p>Final Assignment</p>
+              <p>18 hrs ago</p>
+            </div>
+            <div class="list-content d-flex justify-content-between">
+              <h4>Have a problem with this…</h4>
+              <p>Tony Wei</p>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+            <div class="list-header d-flex justify-content-between">
+              <p>Final Assignment</p>
+              <p>19 hrs ago</p>
+            </div>
+            <div class="list-content d-flex justify-content-between">
+              <h4>Did I do it right?</h4>
+              <p>Christina Lin</p>
+            </div>
+          </a>
+        </div>
+      </div>
+  </div>
+    <!-- Right -->
+    <div class="col-12 col-md-8 ps-4 personal">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+        <div class="card mb-3">
+          <div class="card-header">
+            <p>Chapter Assignment 2 / HTML&CSS</p>
+            <h4>Please check this file for me, thanks!</h4>
+          </div>
+          <div class="card-body">
+            <div class="d-flex align-items-center pb-4">
+                <div>
+                  <img
+                    src="./assets/images/emilywang.jpeg"
+                    alt="登入者頭像"
+                    class="user-img me-2"
+                  >
+                </div>
+                <div class="avator-content">
+                  <p class="user-title">
+                    Emily Wang
+                  </p>
+                  <span class="user-text">
+                    10:38 AM (4 hours ago)
+                  </span>
+                </div>
+            </div>
+            <div class="d-flex card-content">
+              <div class="flex-grow-1 ms-3">
+                This is Hi Teacher, the attached file is my homework of chapter 2. And here comes a <br>question: Why in the following code the height of the <code class="text-success bg-light px-1 rounded-1">div</code> is bigger than the <br>height of the img ? There is a gap below the <code class="text-success bg-light px-1 rounded-1">image</code>, but it doesn’t seems to be a <br>padding/margin.<br> What is the gap or extra space below image?
+              </div>
+            </div>
+            <div class="ms-3 pt-4">
+              <a href="#" class="btn btn-light border" download="HW-2-David.zip">HW-2-David.zip</a>
+            </div>
+            <hr>
+            <!-- 2 -->
+              <div class="d-flex align-items-center pb-4">
+                <div>
+                  <img
+                    src="./assets/images/andychen.jpeg"
+                    alt="登入者頭像"
+                    class="user-img me-2"
+                  >
+                </div>
+                <div class="avator-content">
+                  <p class="user-title">
+                    Andy Chen (You)
+                  </p>
+                  <span class="user-text">
+                    13:24 AM (1 hours ago)
+                  </span>
+                </div>
+            </div>
+            <div class="d-flex card-content">
+              <div class="flex-grow-1 ms-3">
+                Hi David, by default, an image is rendered inline, like a letter so it sits on the <br> same line that a, b, c and d sit on. There is space below that line for the<br>descenders you find on letters like g, j, p and q.<br>
+                <p>You can:</p>
+                <ul>
+                  <li>adjust the <code class="text-success bg-light px-1 rounded-1">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="text-success bg-light px-1 rounded-1">middle</code> ) or</li>
+                  <li>change the <code class="text-success bg-light px-1 rounded-1">display</code> so it isn’t inline.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="icon">
+        <span class="material-icons pe-5">
+          keyboard_arrow_left
+        </span>
+        <span class="material-icons">
+          keyboard_arrow_right
+        </span>
+      </div>
+      <div class="d-flex justify-content-end pb-5">
+        <button type="button" class="btn btn-outline-success me-3">Mark as read</button>
+        <button type="button" class="btn btn-success">Reply</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</main>

@@ -1,0 +1,16 @@
+@mixin logo-setting {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin font($fs, $lh, $fw:400) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}

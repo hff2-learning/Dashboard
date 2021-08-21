@@ -1,0 +1,90 @@
+body{
+    color: $gray-900;
+}
+
+.assignment {
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-left: 328px;
+}
+
+.nav{
+    padding-bottom: 44px;
+    &-header{
+        h2{
+            @include font(24px,33px,700);
+        }
+        h3{
+            @include font(16px,24px,700);
+        }
+    }
+    &-icon span{
+        @include size(24px,24px);
+    }
+}
+
+.row{
+    h4{
+        @include font(16px,24px,700);
+    }
+}
+
+.list{
+    &-group-item{
+        width: 320px;
+    }
+    &-header{
+        @include font(12px,24px,400);
+        color: $gray-900;
+        p{
+            margin-bottom: 4px;
+        }
+    }
+    &-content{
+        h4{
+            @include font(16px,24px,700);
+            color: $gray-900;
+            margin-bottom: 4px;
+        }
+        p{
+            @include font(12px, 24px, 400);
+            color: $gray-600;
+            margin: 0;
+        }
+    }
+}
+
+.personal{
+    padding-top: 34px;
+}
+
+.card{
+    &-header{
+        p{
+            @include font(12px,24px,400);
+            color: $gray-900;
+            margin-bottom: 4px;
+        }
+        h4{
+            @include font(16px, 24px, 700);
+            margin: 0;
+        }
+    }
+    &-content > div{
+        @include font(14px,21px,400);
+        p{
+            padding-top: 20px;
+        }
+    }
+}
+
+.avator{
+    &-content{
+        p{
+            color: $gray-900;
+        }
+        span{
+            color: $gray-600;
+        }
+    }
+}
